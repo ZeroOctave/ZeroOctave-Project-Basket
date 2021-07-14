@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/socials.css" />
+    <title>SOCIALS</title>
+  </head>
+  <body>
+    <h1>Posts:</h1>
+    <ul>
+      <% tweets.forEach((t,index) => { %> <% const i = imgs[index] %>
+      <li><%= t.tweet %> -<b><%= t.name %></b>(<%= t.date %> )</li>
+      <img
+        src="imgsApi/<%= i.filename %> "
+        alt="no img"
+        height="200px"
+        width="200px"
+      />
+
+      <% }); %>
+    </ul>
+    <a href="/new">New Post</a>
+    <script src="js/socials.js"></script>
+  </body>
+</html>

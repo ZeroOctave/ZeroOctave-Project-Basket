@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/new.css" />
+    <title>NEW POST</title>
+  </head>
+  <body>
+    <!-- <form action="/" method="POST" enctype="multipart/form-data">
+      <section>
+        username:
+        <input type="text" id="name" placeholder="username" name="name" />
+      </section>
+      <section>
+        tweet:
+        <textarea name="tweet" id="" cols="30" rows="10"></textarea>
+      </section>
+      <section>
+        <input type="file" name="file" id="file" />
+      </section>
+      <button>submit</button>
+    </form> -->
+
+    <!-- other -->
+    <form class="form" action="/" method="POST" enctype="multipart/form-data">
+      <div class="title" style="text-align: center">Upload Your Post</div>
+      <div class="subtitle"></div>
+      <div class="input-container ic1">
+        <input
+          id="firstname name"
+          name="name"
+          class="input"
+          type="text"
+          placeholder=" "
+        />
+        <div class="cut"></div>
+        <label for="firstname" class="placeholder">Username</label>
+      </div>
+      <div class="input-container ic2">
+        <input
+          id="lastname tweet"
+          name="tweet"
+          class="input"
+          type="text"
+          placeholder=" "
+        />
+        <div class="cut"></div>
+        <label for="lastname" class="placeholder">Comment</label>
+      </div>
+      <div class="input-container ic2">
+        <!-- <button
+          style="display: block; width: 120px; height: 30px"
+          onclick="document.getElementById('file').click()"
+          class="buttonn"
+        >
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/upload--v1.png"
+          />
+          image -->
+        <!-- </button> -->
+        <button
+          class="noselect"
+          onclick="document.getElementById('file').click()"
+          type="button"
+        >
+          <span class="text">Image</span
+          ><span class="icon">
+            <img
+              src="https://img.icons8.com/material-outlined/24/000000/upload--v1.png"
+          /></span>
+        </button>
+        <input
+          type="file"
+          name="file"
+          id="file"
+          placeholder="Input image"
+          style="display: none"
+        />
+        <div class="cut cut-short"></div>
+      </div>
+      <button
+        type="submit"
+        class="submit"
+        style="
+          position: relative;
+          background-color: #355c7d;
+          border-radius: 12px;
+          border: 0;
+          box-sizing: border-box;
+          color: #eee;
+          cursor: pointer;
+          font-size: 18px;
+          height: 50px;
+          margin-top: 38px;
+          outline: 0;
+          text-align: center;
+          width: 100%;
+          justify-content: center;
+        "
+      >
+        submit
+      </button>
+    </form>
+
+    <script src="js/new.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>ANIME DETAIL</title>
+  </head>
+  <body>
+    <!-- <h1>Name:<%= data.title%></h1>
+    <h1>synopsis:<%= data.synopsis%></h1>
+    <h2><a href="<%= data.url%>">read more:</a></h2>
+    <h1>episodes:<%= data.episodes%></h1>
+    <h1>score:<%= data.score%></h1>
+    <h1>started:<%= data.start_date%></h1>
+    <h1>ended:<%= data.end_date%></h1>
+    <h1>Rated:<%= data.rated%></h1>
+    <img src="<%= data.image_url %> " alt="no img" /> -->
+    <!-- other -->
+
+    <div id="ContainerHL">
+      <div id="MainPoster">
+        <img src="<%= data.image_url %>" height="280" />
+        <div id="Ratings">
+          <table>
+            <tr>
+              <td>
+                <b
+                  ><span
+                    style="font-family: 'Noto Sans', sans-serif; color: #30e3ca"
+                    >SCORE:</span
+                  ></b
+                >
+              </td>
+              <td><b><%= data.score%></b><span> / 10</span></td>
+            </tr>
+            <tr>
+              <td>
+                <b
+                  ><span
+                    style="font-family: 'Noto Sans', sans-serif; color: #30e3ca"
+                    >Episodes:</span
+                  ></b
+                >
+              </td>
+              <td><b><%= data.episodes%></b></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div
+        id="TitleHL"
+        style="font-family: 'Noto Sans', sans-serif; color: #00adb5"
+      >
+        <b><%= data.title%></b>
+      </div>
+    </div>
+    <div id="SelMovie">
+      <div id="MovieInfoMain">
+        <div id="Title"><b> </b></div>
+        <div id="UserRating"></div>
+        <div id="DetailsTop"></div>
+        <div id="DetailsTopCover"></div>
+        <div id="DetailsBottom"></div>
+        <div id="DetailsBottomCover"></div>
+        <div id="Details">
+          <table>
+            <tr>
+              <td class="Key">Started</td>
+              <td class="Value"><%= data.start_date%></td>
+            </tr>
+            <tr>
+              <td class="Key">Ended</td>
+              <td class="Value"><%= data.end_date%></td>
+            </tr>
+            <tr>
+              <td class="Key">Synopsis</td>
+              <td class="Value"><%= data.synopsis%></td>
+            </tr>
+            <tr>
+              <td class="Key">Read more</td>
+              <td class="Value">
+                <a href="<%= data.url%>"
+                  ><img
+                    src="https://img.icons8.com/material-rounded/48/ffffff/info.png"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+            <tr>
+              <td class="Key"></td>
+              <td class="Value"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="Background">
+      <img src="<%= data.image_url %>" />
+    </div>
+
+    <script src="js/search.js"></script>
+  </body>
+</html>
